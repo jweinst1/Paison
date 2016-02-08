@@ -2,9 +2,9 @@
 
 class VarGenerator:
     modes = ["random", "syl"]
-    alphabet = "abcdefghijklmnopqrstuvwxyz".split("")
-    con = "bcdfghjklmnpqrstvwxyz".split("")
-    vow = "aeiou".split("")
+    alphabet = list("abcdefghijklmnopqrstuvwxyz")
+    con = list("bcdfghjklmnpqrstvwxyz")
+    vow = list("aeiou")
 
     def __init__(self, mode):
         assert mode in VarGenerator.modes
