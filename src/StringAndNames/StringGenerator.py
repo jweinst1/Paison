@@ -17,6 +17,13 @@ class StringGenerator:
         return item in self.past()
     def past(self):
         return set(self.previous)
+
+    #produces stream of alphabetically oriented letters
+    def alpharange(self, length):
+        newstr = ""
+        for i in range(length):
+            newstr += StringGenerator.alphabet[i % 25]
+        return '\"'+ newstr + '\"'
     def randstring(self, length):
         import random
         genstr = ''.join([random.choice(StringGenerator.allchar) for i in range(length)])
@@ -25,13 +32,25 @@ class StringGenerator:
         import random
         genstr = ''.join([random.choice(StringGenerator.alphabet) for i in range(length)])
         return '\"'+genstr + '\"'
+    def randalphaspacestr(self, length):
+        import random
+        genstr = ''.join([random.choice(StringGenerator.alphabet) + " " for i in range(length//2)])
+        return '\"'+genstr + '\"'
     def randnumstr(self, length):
         import random
         genstr = ''.join([random.choice(StringGenerator.num) for i in range(length)])
         return '\"'+genstr + '\"'
+    def randnumspacestr(self, length):
+        import random
+        genstr = ''.join([random.choice(StringGenerator.num) + " " for i in range(length//2)])
+        return '\"'+genstr + '\"'
     def randsymstr(self, length):
         import random
         genstr = ''.join([random.choice(StringGenerator.sym) for i in range(length)])
+        return '\"'+genstr + '\"'
+    def randconvowstr(self, length):
+        import random
+        genstr = ''.join([random.choice(StringGenerator.con) + random.choice(StringGenerator.vow) for i in range(length//2)])
         return '\"'+genstr + '\"'
 
 
