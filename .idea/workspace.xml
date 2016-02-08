@@ -2,11 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f08eee4d-eb3c-4deb-ad12-48ee75ad0411" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/StringAndNames/RandGenOld.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/StringAndNames/VariableGenerator.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/StringAndNames/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/StringAndNames/StringGenerator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/__main__.py" afterPath="$PROJECT_DIR$/src/__main__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StringAndNames/RandGenOld.py" afterPath="$PROJECT_DIR$/src/StringAndNames/RandGenOld.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/StringAndNames/VariableGenerator.py" afterPath="$PROJECT_DIR$/src/StringAndNames/VariableGenerator.py" />
     </list>
     <ignored path="Paison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,17 +74,27 @@
         <entry file="file://$PROJECT_DIR$/src/StringAndNames/VariableGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RandGenOld.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="RandGenOld.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/StringAndNames/RandGenOld.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.96638656">
-              <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="StringGenerator.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/StringAndNames/StringGenerator.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.6302521">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -110,8 +119,9 @@
         <option value="$PROJECT_DIR$/Routes/FunctionStacks.txt" />
         <option value="$PROJECT_DIR$/src/__main__.py" />
         <option value="$PROJECT_DIR$/src/StringAndNames/__init__.py" />
-        <option value="$PROJECT_DIR$/src/StringAndNames/VariableGenerator.py" />
         <option value="$PROJECT_DIR$/src/StringAndNames/RandGenOld.py" />
+        <option value="$PROJECT_DIR$/src/StringAndNames/VariableGenerator.py" />
+        <option value="$PROJECT_DIR$/src/StringAndNames/StringGenerator.py" />
       </list>
     </option>
   </component>
@@ -535,18 +545,26 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StringAndNames/VariableGenerator.py">
+    <entry file="file://$PROJECT_DIR$/src/StringAndNames/RandGenOld.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="25" selection-start-line="27" selection-start-column="25" selection-end-line="27" selection-end-column="25" />
+          <caret line="72" column="26" selection-start-line="72" selection-start-column="26" selection-end-line="72" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/StringAndNames/RandGenOld.py">
+    <entry file="file://$PROJECT_DIR$/src/StringAndNames/VariableGenerator.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.96638656">
-          <caret line="78" column="0" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/StringAndNames/StringGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6302521">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
           <folding />
         </state>
       </provider>

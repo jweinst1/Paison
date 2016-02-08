@@ -70,8 +70,7 @@ def Random_Dictionary(entries, maxlength): #returns a dictionary of specificed n
 		word.construct_word()
 		word.add_to_dictionary()
 		count += 1
-	for k, v in word.dictionary.items():
-		print k, v
+	return word.dictionary
 
 
 
