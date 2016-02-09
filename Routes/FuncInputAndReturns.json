@@ -1,0 +1,21 @@
+{"input":{
+  "None":[
+    "None", "list", "dict", "int", "print", "yield", "object", "string"
+  ],
+  "int":[
+    "None", "list", "dict", "int", "print", "yield", "object", "string"
+  ],
+  "list":[
+    "None", "list", "dict", "int", "print", "yield", "object", "string"
+  ],
+  "dict":[
+    "None", "list", "dict", "int", "print", "yield", "object", "string"
+  ],
+  "string":[
+    "None", "list", "dict", "int", "print", "yield", "object", "string"
+  ],
+  "object":[
+    "None", "list", "dict", "int", "print", "yield", "object", "string"
+  ]
+  }
+}

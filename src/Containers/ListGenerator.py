@@ -32,6 +32,8 @@ class ListGenerator:
     def strlistrandom(self, length):
         import random
         return str(['\"'+random.choice(ListGenerator.alphabet)+'\"' for i in range(length)])
-    
+    def emptylist(self):
+        return '[]'
+
 
 
