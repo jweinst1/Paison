@@ -1,5 +1,19 @@
 {
   "int":{
-    
+
+  },
+  "string":{
+
+  },
+  "list":{
+    "intlist":[
+      "math", "remove", "append", "fuse"
+    ]
+  },
+  "dict":{
+
+  },
+  "None":{
+
   }
 }
