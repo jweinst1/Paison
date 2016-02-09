@@ -10,10 +10,13 @@ class ListGenerator:
         return str(self.previous)
     def past(self):
         return set(self.previous)
+
     def intlist(self, length):
         return str([elem for elem in range(length)])
+
     def intlisteven(self, length):
         return str([elem for elem in range(length) if elem%2==0])
+
     def intlistodd(self, length):
         return str([elem for elem in range(length) if elem%2!=0])
     def intlistreverse(self, length):

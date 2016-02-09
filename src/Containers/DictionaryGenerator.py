@@ -1,5 +1,6 @@
 #file that contains the dictionary generator
 
+
 class DictionaryGenerator:
     alphabet = list("abcdefghijklmnopqrstuvwxyz")
 
