@@ -23,7 +23,7 @@ class ListGenerator:
     def intdeeplist(self, length):
         return str([[elem] for elem in range(length)])
     def strlist(self, length):
-        return str(['\"'+elem+'\"' for elem in ListGenerator.alphabet])
+        return str(['\"'+ListGenerator.alphabet[i]+'\"' for i%25 in range(length)])
     def strnumlist(self, length):
         return str(['\"'+str(elem)+'\"' for elem in range(length)])
     def intlistrandom(self, maxnum, length):
