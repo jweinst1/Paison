@@ -26,7 +26,7 @@ class ListGenerator:
     def intdeeplist(self, length):
         return str([[elem] for elem in range(length)])
     def strlist(self, length):
-        return str(['\"'+ListGenerator.alphabet[i]+'\"' for i%25 in range(length)])
+        return str(['\"'+ListGenerator.alphabet[i%25]+'\"' for i in range(length)])
     def strnumlist(self, length):
         return str(['\"'+str(elem)+'\"' for elem in range(length)])
     def intlistrandom(self, maxnum, length):

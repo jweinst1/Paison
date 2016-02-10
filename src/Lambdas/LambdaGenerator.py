@@ -8,6 +8,7 @@ class LambdaGenerator:
     def __init__(self):
         self.vargen = VarGenerator("syl")
         self.listgen = ListGenerator()
+        self.liscomp = ListComprehensionGenerator
         self.bin = []
     def __repr__(self):
         return str(self.bin)
@@ -35,7 +36,7 @@ class LambdaGenerator:
         body = ""
         select = random.randrange(1)
         if select is 0:
-            body += "[elem for elem in range({arg})]".format(arg=param)
+            body += self.liscomp.rangecomp(param)
         self.writelambda(name, param, body)
 
     def printlambdas(self, type, amount):
@@ -45,3 +46,10 @@ class LambdaGenerator:
             result = "\n".join(self.bin)
             print(result)
             self.clear()
+    def createlambdas(self, type, amount):
+        if type is "math":
+            for i in range(amount):
+                self.mathlambda(5, 10)
+            result = "\n".join(self.bin)
+            self.clear()
+            return result
