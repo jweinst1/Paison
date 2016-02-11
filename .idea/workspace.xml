@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f08eee4d-eb3c-4deb-ad12-48ee75ad0411" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Containers/ListComprehensions.py" afterPath="$PROJECT_DIR$/src/Containers/ListComprehensions.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Containers/ListGenerator.py" afterPath="$PROJECT_DIR$/src/Containers/ListGenerator.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Lambdas/LambdaGenerator.py" afterPath="$PROJECT_DIR$/src/Lambdas/LambdaGenerator.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/__main__.py" afterPath="$PROJECT_DIR$/src/__main__.py" />
     </list>
     <ignored path="Paison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LambdaGenerator.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LambdaGenerator.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Lambdas/LambdaGenerator.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
+            <state vertical-scroll-proportion="1.0504202">
+              <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
               <folding>
                 <element signature="e#46#107#0" expanded="true" />
               </folding>
@@ -63,11 +61,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListComprehensions.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ListComprehensions.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Containers/ListComprehensions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="1.1344538">
-              <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
               <folding />
             </state>
           </provider>
@@ -167,8 +165,8 @@
         <option value="$PROJECT_DIR$/Routes/LambdaRoutes.txt" />
         <option value="$PROJECT_DIR$/src/Containers/ListGenerator.py" />
         <option value="$PROJECT_DIR$/src/__main__.py" />
-        <option value="$PROJECT_DIR$/src/Lambdas/LambdaGenerator.py" />
         <option value="$PROJECT_DIR$/src/Containers/ListComprehensions.py" />
+        <option value="$PROJECT_DIR$/src/Lambdas/LambdaGenerator.py" />
       </list>
     </option>
   </component>
@@ -864,16 +862,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Lambdas/LambdaGenerator.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="23" selection-start-line="37" selection-start-column="23" selection-end-line="37" selection-end-column="23" />
-          <folding>
-            <element signature="e#46#107#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/testingplz.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -884,9 +872,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Containers/ListComprehensions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.1344538">
-          <caret line="27" column="56" selection-start-line="27" selection-start-column="56" selection-end-line="27" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="47" column="60" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Lambdas/LambdaGenerator.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.0504202">
+          <caret line="50" column="47" selection-start-line="50" selection-start-column="47" selection-end-line="50" selection-end-column="47" />
+          <folding>
+            <element signature="e#46#107#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

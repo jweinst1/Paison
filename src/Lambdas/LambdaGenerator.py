@@ -34,9 +34,21 @@ class LambdaGenerator:
         name = self.vargen.genvar(6)
         param = random.choice(self.vargen.alphabet)
         body = ""
-        select = random.randrange(1)
+        select = random.randrange(5)
         if select is 0:
             body += self.liscomp.rangecomp(param)
+        elif select is 1:
+            body += self.liscomp.rangecomp_t(param)
+        elif select is 2:
+            body += self.liscomp.repeatcomp(str(select), param)
+        elif select is 3:
+            body += self.liscomp.repeatcomp(param, param)
+        elif select is 4:
+            body += self.liscomp.repeatcomp_t(param, param)
+        elif select is 5:
+            body += self.liscomp.evencomp(param)
+        elif select is 6:
+            body += self.liscomp.oddcomp(param)
         self.writelambda(name, param, body)
 
     def printlambdas(self, type, amount):
@@ -53,3 +65,6 @@ class LambdaGenerator:
             result = "\n".join(self.bin)
             self.clear()
             return result
+    #used to create a specified amount of a random type of lambdas
+    def createrandlambdas(self, amount):
+        pass
