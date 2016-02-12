@@ -38,3 +38,15 @@ class IndexExpressionGenerator:
     @staticmethod
     def setfirsttosecond(self, name):
         return "{name}[0] = {name}[1]".format(name=name)
+
+    @staticmethod
+    def setfirstsquared(self, name):
+        return "{name}[0] = {name}[0]**{name}[0]".format(name=name)
+
+    @staticmethod
+    def nullifyfirst(self, name):
+        return "{name}[0] = None".format(name=name)
+
+    @staticmethod
+    def nullifycustom(self, name, number):
+        return "{name}[{number}] = None".format(number=number, name=name)
