@@ -18,3 +18,23 @@ class IndexExpressionGenerator:
     @staticmethod
     def getitemreverse(self, name):
         return "{name}[::-1]".format(name=name)
+
+    @staticmethod
+    def addfirsttwoindex(self, name):
+        return "{name}[0] + {name}[1]".format(name=name)
+
+    @staticmethod
+    def addsecondtofirstindex(self, name):
+        return "{name}[0] += {name}[1]".format(name=name)
+
+    @staticmethod
+    def subtractfirsttwoindex(self, name):
+        return "{name}[0] - {name}[1]".format(name=name)
+
+    @staticmethod
+    def subtractsecondfromfirstindex(self, name):
+        return "{name}[0] -= {name}[1]".format(name=name)
+
+    @staticmethod
+    def setfirsttosecond(self, name):
+        return "{name}[0] = {name}[1]".format(name=name)

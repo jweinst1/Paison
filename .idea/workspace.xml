@@ -2,24 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f08eee4d-eb3c-4deb-ad12-48ee75ad0411" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Classes/__init__.py" afterPath="$PROJECT_DIR$/paison/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Containers/DictionaryGenerator.py" afterPath="$PROJECT_DIR$/paison/Containers/DictionaryGenerator.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Containers/IndexExpressions.py" afterPath="$PROJECT_DIR$/paison/Containers/IndexExpressions.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Containers/ListComprehensions.py" afterPath="$PROJECT_DIR$/paison/Containers/ListComprehensions.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Containers/ListGenerator.py" afterPath="$PROJECT_DIR$/paison/Containers/ListGenerator.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Containers/TupleGenerator.py" afterPath="$PROJECT_DIR$/paison/Containers/TupleGenerator.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Containers/__init__.py" afterPath="$PROJECT_DIR$/paison/Containers/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lambdas/LambdaGenerator.py" afterPath="$PROJECT_DIR$/paison/Lambdas/LambdaGenerator.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lambdas/LambdaUtils.py" afterPath="$PROJECT_DIR$/paison/Lambdas/LambdaUtils.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Lambdas/__init__.py" afterPath="$PROJECT_DIR$/paison/Lambdas/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/SingleLineStatements/__init__.py" afterPath="$PROJECT_DIR$/paison/SingleLineStatements/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/StringAndNames/RandGenOld.py" afterPath="$PROJECT_DIR$/paison/StringAndNames/RandGenOld.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/StringAndNames/StringGenerator.py" afterPath="$PROJECT_DIR$/paison/StringAndNames/StringGenerator.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/StringAndNames/VariableGenerator.py" afterPath="$PROJECT_DIR$/paison/StringAndNames/VariableGenerator.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/StringAndNames/__init__.py" afterPath="$PROJECT_DIR$/paison/StringAndNames/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/__init__.py" afterPath="$PROJECT_DIR$/paison/Classes/__init__.py" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/__main__.py" afterPath="$PROJECT_DIR$/paison/__main__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/paison/Containers/IndexExpressions.py" afterPath="$PROJECT_DIR$/paison/Containers/IndexExpressions.py" />
     </list>
     <ignored path="Paison.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -80,8 +63,8 @@
       <file leaf-file-name="IndexExpressions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/paison/Containers/IndexExpressions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.79831934">
-              <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+            <state vertical-scroll-proportion="0.9159664">
+              <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -980,8 +963,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/paison/Containers/IndexExpressions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79831934">
-          <caret line="19" column="46" selection-start-line="19" selection-start-column="46" selection-end-line="19" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.9159664">
+          <caret line="39" column="56" selection-start-line="39" selection-start-column="56" selection-end-line="39" selection-end-column="56" />
           <folding />
         </state>
       </provider>
