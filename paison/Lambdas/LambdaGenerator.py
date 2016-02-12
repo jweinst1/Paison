@@ -1,7 +1,7 @@
 #file that contains the main lambda generator
-from src.StringAndNames.VariableGenerator import VarGenerator
-from src.Containers.ListGenerator import ListGenerator
-from src.Containers.ListComprehensions import ListComprehensionGenerator
+from paison.StringAndNames.VariableGenerator import VarGenerator
+from paison.Containers.ListGenerator import ListGenerator
+from paison.Containers.ListComprehensions import ListComprehensionGenerator
 class LambdaGenerator:
     mathsym = "+ - * / // % **".split(" ")
 

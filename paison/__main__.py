@@ -1,5 +1,5 @@
 #main commandline file for package
-from src.Lambdas.LambdaGenerator import LambdaGenerator
+from paison.Lambdas.LambdaGenerator import LambdaGenerator
 import sys
 import os
 sys.path.append(os.path.join(os.path.dirname(__file__), "..", ".."))
