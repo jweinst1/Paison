@@ -19,6 +19,12 @@ class BooleanGenerators:
         import random
         while True:
             yield "{x} > {y}".format(x=random.randrange(x), y=random.randrange(y))
+
+    @staticmethod
+    def boolean_lt_number(x, y):
+        import random
+        while True:
+            yield "{x} < {y}".format(x=random.randrange(x), y=random.randrange(y))
 #random literal letter comparison
     @staticmethod
     def boolean_is_letter():
