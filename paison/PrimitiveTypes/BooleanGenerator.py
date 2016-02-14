@@ -1,4 +1,3 @@
-
 #generators that yield random boolean expressions
 class BooleanGenerators:
 
