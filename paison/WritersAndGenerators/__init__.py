@@ -1,4 +1,5 @@
 #package for dealing with string writers
+#also manages generators
 
 class Writer:
 
@@ -63,3 +64,6 @@ class MathWriter(Writer):
         expr = random.choice(variables) + random.choice(symbols)
         expr += "(" + str(random.randrange(maxnum)) + random.choice(symbols) + str(random.randrange(maxnum)) + ")"
         return expr
+
+
+##General Generators########
