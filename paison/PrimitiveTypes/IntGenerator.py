@@ -57,3 +57,43 @@ class IntGenerators:
         while True:
             yield i
             i += i
+    #alternates bewteen positive and negative numbers in a natural sequence
+    @staticmethod
+    def naturalposneg():
+        i = 0
+        while True:
+            yield i
+            if i < 0:
+                i = abs(i)
+                i += 1
+            else:
+                i = -i
+                i -= 1
+       #yields a random number up to some maximum
+    @staticmethod
+    def randnum(maxn):
+        import random
+        while True:
+            yield random.randrange(maxn)
+     #random number generator where the max random changes everytime
+    @staticmethod
+    def superrandnum():
+        import random
+        maxn = random.randrange(3, 10)
+        while True:
+            yield random.randrange(2, maxn)
+            maxn = random.randrange(maxn)
+     #generates a sequence by continously dividing a number
+    @staticmethod
+    def divider(start, dividend):
+        i = start
+        while True:
+            yield i
+            i /= dividend
+
+    @staticmethod
+    def subtractor(start, sub):
+        i = start
+        while True:
+            yield i
+            i -= sub
