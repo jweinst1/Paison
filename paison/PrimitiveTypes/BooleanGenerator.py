@@ -20,10 +20,22 @@ class BooleanGenerators:
             yield "{x} > {y}".format(x=random.randrange(x), y=random.randrange(y))
 
     @staticmethod
+    def boolean_ge_number(x, y):
+        import random
+        while True:
+            yield "{x} >= {y}".format(x=random.randrange(x), y=random.randrange(y))
+
+    @staticmethod
     def boolean_lt_number(x, y):
         import random
         while True:
             yield "{x} < {y}".format(x=random.randrange(x), y=random.randrange(y))
+
+    @staticmethod
+    def boolean_le_number(x, y):
+        import random
+        while True:
+            yield "{x} <= {y}".format(x=random.randrange(x), y=random.randrange(y))
 #random literal letter comparison
     @staticmethod
     def boolean_is_letter():
@@ -33,3 +45,17 @@ class BooleanGenerators:
             x = "\"" + random.choice(letters) + "\""
             y = "\"" + random.choice(letters) + "\""
             yield "{x} is {y}".format(x=x, y=y)
+
+    @staticmethod
+    def boolean_not_num(n):
+        import random
+        while True:
+            yield "not {num}".format(num=random.randrange(n))
+
+     ##VARIABLE BOOLAN GENERATORS
+    @staticmethod
+    def var_is_num(varname):
+        import random
+        while True:
+            yield "{x} is {y}".format(x=varname, y=random.randrange(y))
+
