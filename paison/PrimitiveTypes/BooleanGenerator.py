@@ -57,5 +57,45 @@ class BooleanGenerators:
     def var_is_num(varname):
         import random
         while True:
-            yield "{x} is {y}".format(x=varname, y=random.randrange(y))
+            yield "{x} is {y}".format(x=varname, y=random.randrange(20))
+
+    @staticmethod
+    def var_eq_num(varname):
+        import random
+        while True:
+            yield "{x} == {y}".format(x=varname, y=random.randrange(20))
+
+
+    @staticmethod
+    def var_lt_num(varname):
+        import random
+        while True:
+            yield "{x} < {y}".format(x=varname, y=random.randrange(20))
+
+
+    @staticmethod
+    def var_gt_num(varname):
+        import random
+        while True:
+            yield "{x} > {y}".format(x=varname, y=random.randrange(20))
+
+    @staticmethod
+    def var_le_num(varname):
+        import random
+        while True:
+            yield "{x} <= {y}".format(x=varname, y=random.randrange(20))
+
+
+    @staticmethod
+    def var_ge_num(varname):
+        import random
+        while True:
+            yield "{x} >= {y}".format(x=varname, y=random.randrange(20))
+
+
+    @staticmethod
+    def var_ne_num(varname):
+        import random
+        while True:
+            yield "{x} != {y}".format(x=varname, y=random.randrange(20))
 

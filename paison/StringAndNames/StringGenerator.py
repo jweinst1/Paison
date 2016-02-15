@@ -53,4 +53,35 @@ class StringGenerator:
         genstr = ''.join([random.choice(StringGenerator.con) + random.choice(StringGenerator.vow) for i in range(length//2)])
         return '\"'+genstr + '\"'
 
+class Stringens:
 
+    @staticmethod
+    def letters():
+        import random
+        alphabet = list("abcdefghijklmnopqrstuvwxyz")
+        while True:
+            yield '\"'+ random.choice(alphabet) + '\"'
+
+
+    @staticmethod
+    def consonants():
+        import random
+        con = list("bcdfghjklmnpqrstvwxyz")
+        while True:
+            yield '\"'+ random.choice(con) + '\"'
+
+
+    @staticmethod
+    def vowels():
+        import random
+        vow = list("aeiou")
+        while True:
+            yield '\"'+ random.choice(vow) + '\"'
+
+    #contiously generates a random literal string symbol
+    @staticmethod
+    def symbols():
+        import random
+        sym = list("~`!@#$%^&*()_+-=[]{}|;:<>?,.")
+        while True:
+            yield '\"'+ random.choice(sym) + '\"'
