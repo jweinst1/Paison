@@ -1,59 +1,8 @@
 #file that builds literal strings.
 
+
+
 class StringGenerator:
-
-    alphabet = list("abcdefghijklmnopqrstuvwxyz")
-    con = list("bcdfghjklmnpqrstvwxyz")
-    vow = list("aeiou")
-    num = list("0123456789")
-    sym = list("~`!@#$%^&*()_+-=[]{}|;:<>?,.")
-    allchar = alphabet + num + sym
-
-    def __init__(self):
-        self.previous = []
-    def __repr__(self):
-        return str(self.previous)
-    def __contains__(self, item):
-        return item in self.past()
-    def past(self):
-        return set(self.previous)
-
-    #produces stream of alphabetically oriented letters
-    def alpharange(self, length):
-        newstr = ""
-        for i in range(length):
-            newstr += StringGenerator.alphabet[i % 25]
-        return '\"'+ newstr + '\"'
-    def randstring(self, length):
-        import random
-        genstr = ''.join([random.choice(StringGenerator.allchar) for i in range(length)])
-        return '\"'+genstr + '\"'
-    def randalphabet(self, length):
-        import random
-        genstr = ''.join([random.choice(StringGenerator.alphabet) for i in range(length)])
-        return '\"'+genstr + '\"'
-    def randalphaspacestr(self, length):
-        import random
-        genstr = ''.join([random.choice(StringGenerator.alphabet) + " " for i in range(length//2)])
-        return '\"'+genstr + '\"'
-    def randnumstr(self, length):
-        import random
-        genstr = ''.join([random.choice(StringGenerator.num) for i in range(length)])
-        return '\"'+genstr + '\"'
-    def randnumspacestr(self, length):
-        import random
-        genstr = ''.join([random.choice(StringGenerator.num) + " " for i in range(length//2)])
-        return '\"'+genstr + '\"'
-    def randsymstr(self, length):
-        import random
-        genstr = ''.join([random.choice(StringGenerator.sym) for i in range(length)])
-        return '\"'+genstr + '\"'
-    def randconvowstr(self, length):
-        import random
-        genstr = ''.join([random.choice(StringGenerator.con) + random.choice(StringGenerator.vow) for i in range(length//2)])
-        return '\"'+genstr + '\"'
-
-class Stringens:
 
     @staticmethod
     def letters():
@@ -62,6 +11,31 @@ class Stringens:
         while True:
             yield '\"'+ random.choice(alphabet) + '\"'
 
+    @staticmethod
+    def letters_string(length):
+        import random
+        alphabet = list("abcdefghijklmnopqrstuvwxyz")
+        while True:
+            letstr = ""
+            for i in range(length):
+                letstr += random.choice(alphabet)
+            yield '\"' + letstr + '\"'
+#yields a letter than a number string
+    @staticmethod
+    def alpha_num():
+        import random
+        alphabet = list("abcdefghijklmnopqrstuvwxyz")
+        nums = list("0123456789")
+        while True:
+            yield '\"' + random.choice(alphabet) + random.choice(nums) + '\"'
+  #yields a alphabet letter than a symbol
+    @staticmethod
+    def alpha_sym():
+        import random
+        alphabet = list("abcdefghijklmnopqrstuvwxyz")
+        sym = list("~`!@#$%^&*()_+-=[]{}|;:<>?,.")
+        while True:
+            yield '\"' + random.choice(alphabet) + random.choice(sym) + '\"'
 
     @staticmethod
     def consonants():
@@ -85,3 +59,32 @@ class Stringens:
         sym = list("~`!@#$%^&*()_+-=[]{}|;:<>?,.")
         while True:
             yield '\"'+ random.choice(sym) + '\"'
+      #specified str of length, only symbols yielded
+    @staticmethod
+    def symbols_str(length):
+        import random
+        sym = list("~`!@#$%^&*()_+-=[]{}|;:<>?,.")
+        while True:
+            letstr = ""
+            for i in range(length):
+                letstr += random.choice(sym)
+            yield '\"' + letstr + '\"'
+
+    @staticmethod
+    def numbers(maxn):
+        import random
+        while True:
+            yield '\"'+ str(random.randrange(maxn)) + '\"'
+      #continously yields con-vow-vow literal strings
+    @staticmethod
+    def conoostr():
+        con = list("bcdfghjklmnpqrstvwxyz")
+        vow = list("aouie")
+        import random
+        while True:
+            chosen = random.choice(vow)
+            yield '\"' + random.choice(con) + chosen + chosen + '\"'
+    #generator that yields letters of the alphabet in sequence
+    @staticmethod
+    def linear_alpahbet():
+        alphabet = list("abcdefghijklmnopqrstuvwxyz")

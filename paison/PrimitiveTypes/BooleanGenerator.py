@@ -99,3 +99,25 @@ class BooleanGenerators:
         while True:
             yield "{x} != {y}".format(x=varname, y=random.randrange(20))
 
+
+#handles chains of or or and statements
+class ChainBooleanGenerator:
+
+    @staticmethod
+    def var_and_is_num(length, varname):
+        import random
+        while True:
+            tempstr = "{x} is {y}".format(x=varname, y=random.randrange(20))
+            for i in range(length-1):
+                tempstr += " and " + "{x} is {y}".format(x=varname, y=random.randrange(20))
+            yield tempstr
+
+    @staticmethod
+    def var_or_is_num(length, varname):
+        import random
+        while True:
+            tempstr = "{x} is {y}".format(x=varname, y=random.randrange(20))
+            for i in range(length-1):
+                tempstr += " or " + "{x} is {y}".format(x=varname, y=random.randrange(20))
+            yield tempstr
+
